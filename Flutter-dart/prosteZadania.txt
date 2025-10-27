@@ -1,0 +1,193 @@
+//zadanie1
+void main(){
+print('Witaj w świecie darta');
+}
+
+//zadanie2
+void main(){
+ 
+String imie='Jacek';
+int wiek=42;
+double wzrost=1.85;
+bool czyStudent=false;
+ 
+print("imię: $imie, wiek: $wiek, wzrost: $wzrost, student: $czyStudent");
+}
+
+//zadanie3
+
+void main() {
+ var l1=17.33;
+ var l2=20.12;
+
+  var suma=l1+l2;
+  var roznica=l1-l2;
+  var iloczyn=l1*l2;
+  var iloraz=l1/l2;
+  
+  print(suma.toStringAsFixed(2));
+  print(roznica.toStringAsFixed(2));
+  print(iloczyn.toStringAsFixed(2));
+  print(iloraz.toStringAsFixed(2));
+}
+
+//zadanie4
+
+String? ocenaNaStopien(int lPunktow){
+  if(lPunktow<60){
+    return "niedostateczny";
+  }
+  if(lPunktow>=60&&lPunktow<74){
+    return "dostateczny";
+  }
+  if(lPunktow>=75&&lPunktow<=89){
+    return "dobry";
+  }
+  else
+    return "bardzo dobry";
+ 
+}
+void main() {
+print(ocenaNaStopien(60));
+print(ocenaNaStopien(80));
+print(ocenaNaStopien(100));
+  
+}
+
+//zadanie5
+
+int sumujDoN(int n){
+  int sum=0;
+  for(int i=0; i<=n; i++){
+    sum+=i;
+  }
+  return sum;
+}
+void main() {
+
+  int p=sumujDoN(4);
+  print(p);
+}
+
+//zadanie6
+void main() {
+
+  final lista=<String>['jacek', 'zbigniew', 'zofia', 'amelia'];
+  for(var el in lista){
+    print(el);
+  }
+  for(var el in lista){
+    if(el.startsWith('z',0)){
+      print(el);
+    }
+  }
+  int lW6=0;
+  for(var el in lista){
+    int size=0;
+    for(var c in el){
+      size++;
+    }
+    if(size>6){
+      lW6++;
+    }
+    }
+print(lW6);
+  }
+
+  
+  
+  
+  
+//zadanie7
+
+double srednia(List<int> liczby){
+  double suma=0;
+  for(var el in liczby){
+    suma+=el;
+  }
+  
+  if(liczby.length>0){
+    return suma/liczby.length;
+  }
+  else return 0.0;
+}
+void main() {
+
+final liczby=<int>[1,2,3,4];
+  print(srednia(liczby));
+final liczby2=<int>[1,2,2,2,4];
+  print(srednia(liczby2));
+final liczby3=<int>[1,2,3,4,1,1,5];
+  print(srednia(liczby3));
+      
+  
+}
+  
+  
+//zadanie8
+
+class Student {
+  String? imie;
+  int? rok;
+  double? srednia;
+  
+  void opis(){
+    print("student $imie, rok $rok, srednia $srednia");
+  }
+  Student([this.imie, this.rok, this.srednia]);
+   
+} 
+
+void main() {
+
+  Student s1=Student('Janusz',4,3.5);
+  Student s2=Student('Marysia',4,3.5);
+  s1.opis();
+  s2.opis();
+  
+}
+
+  //zadanie9
+
+class Osoba{
+  String? imie;
+  
+  void przedstawSie(){
+    print("jestem $imie");
+  }
+  
+  
+}
+class Student extends Osoba{
+  String? imie;
+  int? rok;
+  double? srednia;
+  
+  void przedstawSie(){
+    print("student $imie, rok $rok, srednia $srednia");
+  }
+  Student([this.imie, this.rok, this.srednia]);
+   
+} 
+
+void main() {
+
+  Student s1=Student("janusz",2,2.5);
+  s1.przedstawSie();
+  
+}
+
+  
+//zadanie10
+
+Future<void> powitanieZOpoznieniem(String imie) async{
+  await Future.delayed(Duration(seconds: 2));
+  print("Witaj $imie");
+}
+
+void main() async {
+await powitanieZOpoznieniem("janusz");
+
+}
+
+  
