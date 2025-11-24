@@ -17,34 +17,33 @@ Funkcje aplikacji
 
 
 Struktura folderu lib:
-'''
+```
 lib/
 ├── main.dart
 │
 ├── models/
-│   ├── make.dart
-│   └── car\_model.dart
+│ ├── make.dart
+│ └── car_model.dart
 │
 ├── services/
-│   └── api\_service.dart
+│ └── api_service.dart
 │
 ├── storage/
-│   └── db\_provider.dart
+│ └── db_provider.dart
 │
 ├── viewmodels/
-│   ├── make\_viewmodel.dart
-│   └── model\_viewmodel.dart
+│ ├── make_viewmodel.dart
+│ └── model_viewmodel.dart
 │
 ├── screens/
-│   ├── make\_list\_screen.dart
-│   ├── model\_list\_screen.dart
-│   └── model\_detail\_screen.dart
+│ ├── make_list_screen.dart
+│ ├── model_list_screen.dart
+│ └── model_detail_screen.dart
 │
 └── widgets/
-    ├── make\_card.dart
-    └── model\_card.dart
-
-'''
+├── make_card.dart
+└── model_card.dart
+```
 **Instrukacja uruchomienia:**
 1. Wymagania
 
