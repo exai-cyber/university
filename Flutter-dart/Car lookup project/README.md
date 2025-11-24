@@ -19,30 +19,30 @@ Funkcje aplikacji
 Struktura folderu lib:
 ```
 lib/
-├── main.dart
+├── main.dart: Punkt startowy aplikacji. Provider’y i uruchamia pierwszy ekran.
 │
 ├── models/
-│ ├── make.dart
-│ └── car_model.dart
+│ ├── make.dart - Klasa reprezentująca markę samochodu.
+│ └── car_model.dart - Klasa reprezentująca pojedynczy model samochodu.
 │
 ├── services/
-│ └── api_service.dart
+│ └── api_service.dart - Obsługa połączenia do API.
 │
 ├── storage/
-│ └── db_provider.dart
+│ └── db_provider.dart - Zapis i odczyt cache w SQLite
 │
 ├── viewmodels/
-│ ├── make_viewmodel.dart
-│ └── model_viewmodel.dart
+│ ├── make_viewmodel.dart - Zarządzanie stanem ekranu.
+│ └── model_viewmodel.dart - Pobieranie i filtrowanie modeli marki.
 │
 ├── screens/
-│ ├── make_list_screen.dart
-│ ├── model_list_screen.dart
-│ └── model_detail_screen.dart
+│ ├── make_list_screen.dart - Ekran wszystkich marek.
+│ ├── model_list_screen.dart - Ekran modeli.
+│ └── model_detail_screen.dart - Ekran szczegółów.
 │
 └── widgets/
-├── make_card.dart
-└── model_card.dart
+├── make_card.dart - Wygląd marek.
+└── model_card.dart - Wygląd modeli.
 ```
 **Instrukacja uruchomienia:**
 1. Wymagania
