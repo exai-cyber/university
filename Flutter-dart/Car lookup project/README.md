@@ -17,7 +17,7 @@ Funkcje aplikacji
 
 
 Struktura folderu lib:
-
+'''
 lib/
 ├── main.dart
 │
@@ -44,7 +44,7 @@ lib/
     ├── make\_card.dart
     └── model\_card.dart
 
-
+'''
 **Instrukacja uruchomienia:**
 1. Wymagania
 
